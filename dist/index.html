@@ -1,53 +1,455 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
+
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>Getting started.....</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="description" content="">
+  <meta name="author" content="">
+  <link rel="icon" href="./images/icon1.png">
+
+  <title>Relax</title>
+  <link href="navbar-top-fixed.css" rel="stylesheet">
+  <!-- Bootstrap core CSS -->
+ 
+
+  <link href="node_modules/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
+  <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+  <script src="node_modules/jquery/dist/jquery.min.js"></script>
+  <script src="node_modules/popper.js/dist/popper.min.js"></script>
+  <!-- Custom styles for this template -->
+
+  <script src="https://use.fontawesome.com/releases/v5.0.8/js/all.js"></script>
 </head>
+
 <body>
-  <nav class="navbar navbar-expand-lg navbar-light bg-light">
-    <a class="navbar-brand" href="#">Navbar</a>
-    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-      <span class="navbar-toggler-icon"></span>
-    </button>
-  
-    <div class="collapse navbar-collapse" id="navbarSupportedContent">
-      <ul class="navbar-nav mr-auto">
-        <li class="nav-item active">
-          <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#">Link</a>
-        </li>
-        <li class="nav-item dropdown">
-          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-            Dropdown
-          </a>
-          <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-            <a class="dropdown-item" href="#">Action</a>
-            <a class="dropdown-item" href="#">Another action</a>
-            <div class="dropdown-divider"></div>
-            <a class="dropdown-item" href="#">Something else here</a>
-          </div>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link disabled" href="#">Disabled</a>
-        </li>
-      </ul>
-      <form class="form-inline my-2 my-lg-0">
-        <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
-        <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
-      </form>
+  <!--navbar starts-->
+  <header>
+    <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
+      <a class="navbar-brand col-1" href="#">Relax</a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse"
+        aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarCollapse">
+        <ul class="navbar-nav mr-auto">
+          <li class="nav-item active ">
+            <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Browse</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link " href="#">Radio</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link " href="#">Discover</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">My Music</a>
+          </li>
+        </ul>
+        <form class="form-inline mt-2 mt-md-0 col-5">
+          <input class="form-control mr-sm-2" type="text" placeholder="Search" aria-label="Search">
+          <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+        </form>
+        <ul class="navbar-nav mr-auto">
+          <li class="nav-item ">
+            <a id="download" class="btn btn-dark" data-toggle="collapse" href="#login" role="button" aria-expanded="false">Download
+              App
+
+            </a>
+            <div class="collapse" id="login">
+              <div class="alert alert-success alert-dismissible fade show" role="alert">
+                <strong>Welcome</strong>
+                <hr><a href="#">Login</a> to enjoy more music
+                <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+                     <span aria-hidden="true">&times;</span>
+                </button>
+              </div>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </nav>
+  </header>
+  <!--navbar ends-->
+  <br><br>
+  <!--carousel starts-->
+  <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+    <ol class="carousel-indicators">
+      <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+      <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+      <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+    </ol>
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+        <img class="d-block w-100 " src="images/iktarfa.jpg" alt="First slide">
+      </div>
+      <div class="carousel-item">
+        <img class="d-block w-100" src="images/latestedm.jpg" alt="Second slide">
+      </div>
+      <div class="carousel-item">
+        <img class="d-block w-100" src="images/newsingle.jpg" alt="Third slide">
+      </div>
     </div>
-  </nav>
-  <div class="jumbotron">
-    <h1 class="display-4">Hello, world!</h1>
-    <p class="lead">This is a simple hero unit, a simple jumbotron-style component for calling extra attention to featured content or information.</p>
-    <hr class="my-4">
-    <p>It uses utility classes for typography and spacing to space content out within the larger container.</p>
-    <a class="btn btn-primary btn-lg" href="#" role="button">Learn more</a>
+    <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="sr-only">Previous</span>
+    </a>
+    <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="sr-only">Next</span>
+    </a>
   </div>
+  <!--carousel ends-->
+  <!--heading or theme starts-->
+  <div class="jumbotron jumbotron-fluid bg-dark text-center">
+    <h1><a class="navbar-brand col-1" href="#">Relax</a></h1>
+    <pre class="text-muted">
+    Music has a unique link to our emotions
+    but as much as we all live with it 
+    than it becomes our emotion and everything. 
+  </pre>
+  </div>
+  <!--heading or theme ends-->
+  <br>
+  <!--music tracks starts-->
+  <div class="container">
+    <ul class="nav nav-tabs" id="myTab" role="tablist">
+      <li class="nav-item">
+        <a class="nav-link active" id="home-tab" data-toggle="tab" href="#home" role="tab" aria-controls="home" aria-selected="true">
+          All Tracks
+        </a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" id="profile-tab" data-toggle="tab" href="#profile" role="tab" aria-controls="profile" aria-selected="false">
+          Telugu
+        </a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" id="contact-tab" data-toggle="tab" href="#contact" role="tab" aria-controls="contact" aria-selected="false">
+          English
+        </a>
+      </li>
+    </ul>
+    <div class="tab-content" id="myTabContent">
+      <div class="tab-pane fade show active" id="home" role="tabpanel" aria-labelledby="home-tab">
+      </div>
+      <div class="container tab-pane fade" id="profile" role="tabpanel" aria-labelledby="profile-tab">
+        <div class="col-sm-12">
+          <div class="card flex-md-row mb-4 shadow-sm h-md-250">
+            <h6 class="bg-danger">Inekm Inkem</h6>
+            <div class="card-body d-flex flex-column align-items-start">
+              <audio src="audio/inkem.mp3" controls class="col-sm-3 col-lg-8">
+                <p>Your browser is not supported
+                  <a href="audio/inkem.mp3">Inkem Inkem</a>
+                </p>
+              </audio>
+            </div>
+            <img class="card-img-right img-responsive flex-auto d-none d-lg-block" width="70" height="80" src="images/geetha.jpg" data-src="holder.js/200x250?theme=thumb"
+              alt="Inkem Inkem kavale">
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="container tab-pane fade" id="contact" role="tabpanel" aria-labelledby="contact-tab">
+      <div class="col-sm-12">
+        <div class="card flex-md-row mb-4 shadow-sm h-md-250">
+          <h6 class="bg-danger">Baby</h6>
+          <div class="card-body d-flex flex-column align-items-start">
+            <audio src="audio/baby.mp3" controls class="col-sm-3 col-lg-8">
+
+              <p>Your browser is not supported
+                <a href="audio/baby.mp3">Baby</a>
+              </p>
+            </audio>
+          </div>
+          <img class="card-img-right flex-auto d-none d-lg-block" width="70" height="80" src="images/justin.jpg" data-src="holder.js/200x250?theme=thumb"
+            alt="Baby">
+        </div>
+      </div>
+    </div>
+
+  </div>
+ 
+
+  
+  <!--music tracks ends-->
+  <br>
+  <!--Listening now starts-->
+  <div class="container">
+    <div class="card-deck">
+      <div class="card">
+        <img class="card-img-top" src="images/ricky.jpg" alt="Ricky">
+        <div  id="ricky" class="card-footer">
+          <small class="text-muted">Ricky<span class="badge badge-secondary">New</span></small>
+        </div>
+      </div>
+      <div class="card">
+        <img class="card-img-top" src="images/selenagomez.jpg" alt="Selena Gomez">
+
+        <div id="selena" class="card-footer">
+          <small class="text-muted">Selena Gomez<span class="badge badge-secondary">New</span></small>
+        </div>
+      </div>
+      <div class="card">
+        <img class="card-img-top" src="images/taylor.jpg" alt="Taylor Swift" height="200">
+        <div class="card-footer" id="taylor">
+          <small class="text-muted">Taylor Swift<span class="badge badge-secondary">New</span></small>
+        </div>
+      </div>
+      <div class="card">
+        <img class="card-img-top" src="images/justin.jpg" alt="justin">
+        <div class="card-footer" id="justin">
+          <small class="text-muted">Justin bieber<span class="badge badge-secondary">New</span></small>
+        </div>
+      </div>
+
+      <div class="card">
+        <img class="card-img-top" src="images/dsp.jpeg" alt="dsp">
+        <div class="card-footer" id="dsp">
+          <small class="text-muted">Devi sri prasad<span class="badge badge-secondary">New</span></small>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <br>
+
+  <div class="container">
+    <div class="card-deck">
+      <div class="card">
+        <img class="card-img-top" src="images/todaystop5.jpg" alt="todays top 5">
+        <div class="card-footer">
+          <small class="text-muted">Today's top 5</small>
+        </div>
+      </div>
+      <div class="card">
+        <img class="card-img-top" src="images/latinthits.jpg" alt="Latin hits">
+
+        <div class="card-footer">
+          <small class="text-muted">International hits</small>
+        </div>
+      </div>
+      <div class="card">
+        <img class="card-img-top" src="images/d.jpg" alt="dsp">
+        <div class="card-footer">
+          <small class="text-muted">DSP HITS</small>
+        </div>
+      </div>
+
+      <div class="card">
+        <img class="card-img-top" src="images/girllikeyou.jpg" alt="girl like you">
+        <div class="card-footer">
+          <small class="text-muted">Trending</small>
+        </div>
+      </div>
+      <div class="card">
+        <img class="card-img-top" src="images/geetha.jpg" alt="geetha govindam">
+
+        <div class="card-footer">
+          <small class="text-muted">inkem inkem kavale<span class="badge badge-secondary">Trending</span></small>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!--Listening now ends-->
+
+  <br>
+
+
+  <!--Today's most loved starts-->
+  <br>
+
+  <div class="container">
+    <div class="col-sm-12">
+      <div class="card flex-md-row mb-4 shadow-sm h-md-250">
+        <h6 class="bg-danger">In My Feelings</h6>
+        <div class="card-body d-flex flex-column align-items-start">
+          <audio controls class="col-sm-3 col-lg-8">
+            <source src="audio/inmyfeelings.mp3" type="audio/mp3">
+            <p>Your browser is not supported
+              <a href="audio/inmyfeelings.mp3">In My Feelings</a>
+            </p>
+          </audio>
+        </div>
+        <img class="card-img-right flex-auto d-none d-lg-block" width="70" height="80" src="images/audio-1.jpg" data-src="holder.js/200x250?theme=thumb"
+          alt="In my feelings">
+      </div>
+    </div>
+  </div>
+  
+  <div class="container">
+    <div class="col-sm-12">
+      <div class="card flex-md-row mb-4 shadow-sm h-md-250">
+        <h6 class="bg-danger">All Time Low</h6>
+        <div class="card-body d-flex flex-column align-items-start">
+          <audio controls class="col-sm-3 col-lg-8">
+            <source src="audio/alltimelow.mp3" type="audio/mp3">
+            <p>Your browser doesn't support HTML5 audio. Here is a link<br>
+              <a href="audio/alltimelow.mp3">All Time Low</a>
+            </p>
+          </audio>
+        </div>
+        <img class="card-img-right flex-auto d-none d-lg-block" width="70" height="80" src="images/audio-2.jpg" data-src="holder.js/200x250?theme=thumb"
+          alt="all time low">
+      </div>
+    </div>
+  </div>
+  
+  <!--Today's most loved ends-->
+
+  <div class="container">
+    <!--This month top starts-->
+    <div class="col-sm-12">
+      <div class="card flex-md-row mb-4 shadow-sm h-md-250">
+        <h6 class="bg-danger">Girls Like You</h6>
+        <div class="card-body d-flex flex-column align-items-start">
+          <audio src="audio/girlslikeyou.mp3" controls class="col-sm-3 col-lg-8">
+
+            <p>Your browser doesn't support HTML5 audio. Here is a link<br>
+              <a href="audio/girlslikeyou.mp3">Girl Like You</a>
+            </p>
+          </audio>
+        </div>
+        <img class="card-img-right flex-auto d-none d-lg-block" width="70" height="80" src="images/girllikeyou.jpg" data-src="holder.js/200x250?theme=thumb"
+          alt="girls like you">
+      </div>
+    </div>
+  </div>
+  
+  <div class="container">
+
+    <div class="col-sm-12">
+      <div class="card flex-md-row mb-4 shadow-sm h-md-250">
+        <h6 class="bg-danger">Good For you Feet</h6>
+        <div class="card-body d-flex flex-column align-items-start">
+          <audio src="audio/goodforyoufeet.mp3" controls class="col-sm-3 col-lg-8">
+
+            <p>Your browser doesn't support HTML5 audio. Here is a link<br>
+              <a href="audio/goodforyoufeet.mp3">Good For You Feet</a>
+            </p>
+          </audio>
+        </div>
+        <img class="card-img-right flex-auto d-none d-lg-block" width="70" height="80" src="images/selenagomez.jpg" data-src="holder.js/200x250?theme=thumb"
+          alt="Good for you feet">
+      </div>
+    </div>
+  </div>
+  
+  <!--This month top ends-->
+
+
+  <img class="card-img-right flex-auto d-none d-lg-block col-xs-1 col-sm-1 col-lg-12" src="images/todays.png" data-src="holder.js/200x250?theme=thumb"
+    alt="todays and monthly list of hit songs">
+<br>
+  <div class="container bg-dark ">
+    <div class="jumbotron text-center bg-dark">
+    
+      <form class="bg-info col-lg-8 mx-auto">
+        <div class="form-group">
+          <label for="inputemail1" class="mt-2">Email address</label>
+          <input type="email" class="form-control col-9 col-lg-4 ml-4 mx-auto" id="inputemail1" placeholder="Enter email">
+         </div>
+        <div class="form-group">
+          <label for="inputpassword">Password</label>
+          <input type="password" class="form-control col-9 col-lg-4 ml-4 mx-auto" id="inputpassword" placeholder="Password">
+        </div>
+        <div class="form-group form-check">
+          <input type="checkbox" class="form-check-input " id="exampleCheck1">
+          <label class="form-check-label" for="exampleCheck1">Check me out</label>
+        </div>
+        <button type="submit" class="btn btn-primary mb-2">Submit</button>
+      </form>
+    
+       
+    </div>
+    </div>
+
+
+
+
+ 
+
+
+  <!-- footer starts-->
+  <footer class="container pt-4 my-md-5 pt-md-5 border-top">
+
+    <div class="row">
+      <!-- additional info starts-->
+      <!-- social network starts-->
+      <div class="col-12 col-md">
+        <h5>Connect with us</h5>
+        <a href="#"><i class="fab fa-facebook"></i></a>&nbsp;&nbsp;
+        <a href="#"><i class="fab fa-twitter"></i></a>&nbsp;&nbsp;
+        <a href="#"><i class="fab fa-google-plus-g"></i></a>&nbsp;&nbsp;
+        <a href="#"><i class="fab fa-instagram"></i></a>&nbsp;&nbsp;
+        <a href="#"><i class="fab fa-youtube"></i></a>
+      </div> <!-- social network ends-->
+      <div class="col-6 col-md">
+        <h5>Albums</h5>
+        <ul class="list-unstyled text-small">
+          <li><a class="text-muted" href="#"> English</a></li>
+          <li><a class="text-muted" href="#"> Telugu</a></li>
+          <li><a class="text-muted" href="#"> Tamil</a></li>
+          <li><a class="text-muted" href="#"> Kannada</a></li>
+          <li><a class="text-muted" href="#"> Korean</a></li>
+          <li><a class="text-muted" href="#"> Bojpuri</a></li>
+        </ul>
+      </div>
+      <div class="col-6 col-md">
+        <h5> Genres</h5>
+        <ul class="list-unstyled text-small">
+          <li><a class="text-muted" href="#">Bollywood Songs</a></li>
+          <li><a class="text-muted" href="#">Patriotic Songs</a></li>
+          <li><a class="text-muted" href="#">Devotional Songs</a></li>
+          <li><a class="text-muted" href="#">Kids Songs</a></li>
+          <li><a class="text-muted" href="#">Rock Songs</a></li>
+        </ul>
+      </div>
+      <div class="col-6 col-md">
+        <h5> Artists</h5>
+        <ul class="list-unstyled text-small">
+          <li><a class="text-muted" href="#">Arjit Singh</a></li>
+          <li><a class="text-muted" href="#">A R Rehman</a></li>
+          <li><a class="text-muted" href="#">Lata Mangeshkar</a></li>
+          <li><a class="text-muted" href="#">Arman malik</a></li>
+          <li><a class="text-muted" href="#">Kishore kumar</a></li>
+          <li><a class="text-muted" href="#">Honey Singh</a></li>
+        </ul>
+      </div>
+      <div class="col-6 col-md">
+        <h5>New Releases </h5>
+        <ul class="list-unstyled text-small">
+          <li><a class="text-muted" href="#"> English Songs</a></li>
+          <li><a class="text-muted" href="#"> Telugu Songs</a></li>
+          <li><a class="text-muted" href="#"> Tamil Songs</a></li>
+          <li><a class="text-muted" href="#"> Kannada Songs</a></li>
+          <li><a class="text-muted" href="#"> Korean Songs</a></li>
+          <li><a class="text-muted" href="#"> Bojpuri Songs</a></li>
+        </ul>
+      </div>
+      <!--Additional info ends-->
+      <!-- more songs-->
+      <a href="#" class="btn btn-default btn-xs" data-toggle="tooltip" data-html="true" title="click to enjoy more music">
+        More songs
+      </a>
+    </div>
+
+    <!-- Copy rights-->
+    <div class="my-5 pt-5 text-muted text-center text-small">
+      <p class="mb-1 navbar-brand">&copy; 2018-2019 Relax</p>
+      <ul class="list-inline">
+        <li class="list-inline-item"><a href="#">Privacy</a></li>
+        <li class="list-inline-item"><a href="#">Terms</a></li>
+        <li class="list-inline-item"><a href="#">Support</a></li>
+      </ul>
+    </div>
+  </footer>
+  <!-- footer ends-->
+
 </body>
+
 </html>
